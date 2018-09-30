@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{8b4b0231-4fb9-450c-bacb-84b82ef75225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Pattern">
+      <UniqueIdentifier>{6a963d5b-8f3b-4df0-bf81-1393ac9a0b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Pattern\Mediator">
+      <UniqueIdentifier>{0c5142f7-db39-4612-a880-60cea7866a5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Pattern\Iterator">
+      <UniqueIdentifier>{83f5dcd0-1517-4d00-b818-ac16c1c12a7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Mediator\ColleagueButton.cpp">
+      <Filter>소스 파일\Pattern\Mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Iterator\BookShelfIterator.cpp">
+      <Filter>소스 파일\Pattern\Iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Iterator\Book.cpp">
+      <Filter>소스 파일\Pattern\Iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Iterator\BookShelf.cpp">
+      <Filter>소스 파일\Pattern\Iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\IteratorExecutor.cpp">
+      <Filter>소스 파일\Pattern</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Pattern\Mediator\ColleagueButton.h">
+      <Filter>소스 파일\Pattern\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Mediator\ColleagueTextField.h">
+      <Filter>소스 파일\Pattern\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Mediator\IColleague.h">
+      <Filter>소스 파일\Pattern\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Mediator\IMediator.h">
+      <Filter>소스 파일\Pattern\Mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Iterator\IIterator.h">
+      <Filter>소스 파일\Pattern\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Iterator\BookShelfIterator.h">
+      <Filter>소스 파일\Pattern\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Iterator\BookShelf.h">
+      <Filter>소스 파일\Pattern\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Iterator\Book.h">
+      <Filter>소스 파일\Pattern\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\IPatternExecutor.h">
+      <Filter>소스 파일\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\IteratorExecutor.h">
+      <Filter>소스 파일\Pattern</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
