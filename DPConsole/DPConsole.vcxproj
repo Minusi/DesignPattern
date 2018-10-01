@@ -20,6 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Pattern\AdapterExecutor.cpp" />
+    <ClCompile Include="Source\Pattern\Adapter\Banner.cpp" />
+    <ClCompile Include="Source\Pattern\Adapter\PrintBanner.cpp" />
     <ClCompile Include="Source\Pattern\IteratorExecutor.cpp" />
     <ClCompile Include="Source\Pattern\Iterator\Book.cpp" />
     <ClCompile Include="Source\Pattern\Iterator\BookShelf.cpp" />
@@ -27,6 +30,10 @@
     <ClCompile Include="Source\Pattern\Mediator\ColleagueButton.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Pattern\AdapterExecutor.h" />
+    <ClInclude Include="Source\Pattern\Adapter\Banner.h" />
+    <ClInclude Include="Source\Pattern\Adapter\IPrint.h" />
+    <ClInclude Include="Source\Pattern\Adapter\PrintBanner.h" />
     <ClInclude Include="Source\Pattern\IPatternExecutor.h" />
     <ClInclude Include="Source\Pattern\IteratorExecutor.h" />
     <ClInclude Include="Source\Pattern\Iterator\Book.h" />

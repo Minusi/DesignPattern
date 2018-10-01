@@ -9,17 +9,18 @@
 
 #include "Pattern\IPatternExecutor.h"
 #include "Pattern\IteratorExecutor.h"
-
+#include "Pattern\AdapterExecutor.h"
 
 
 using namespace nana;
 
-
+#include <iostream>
+#include <memory>
 
 int main()
 {
-	IPatternExecutor* PatternExecutor = new IteratorExecutor();
+	std::unique_ptr<IPatternExecutor> PatternExecutor(new NAdapterExecutor());
 	PatternExecutor->ExecutePattern();
 
 	return 0;
-}
+} 

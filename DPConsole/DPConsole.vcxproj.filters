@@ -17,6 +17,9 @@
     <Filter Include="소스 파일\Pattern\Iterator">
       <UniqueIdentifier>{83f5dcd0-1517-4d00-b818-ac16c1c12a7b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Pattern\Adapter">
+      <UniqueIdentifier>{636ca7d0-9be8-4de4-87c8-89080cc2f27c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp">
@@ -35,6 +38,15 @@
       <Filter>소스 파일\Pattern\Iterator</Filter>
     </ClCompile>
     <ClCompile Include="Source\Pattern\IteratorExecutor.cpp">
+      <Filter>소스 파일\Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Adapter\Banner.cpp">
+      <Filter>소스 파일\Pattern\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Adapter\PrintBanner.cpp">
+      <Filter>소스 파일\Pattern\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\AdapterExecutor.cpp">
       <Filter>소스 파일\Pattern</Filter>
     </ClCompile>
   </ItemGroup>
@@ -67,6 +79,18 @@
       <Filter>소스 파일\Pattern</Filter>
     </ClInclude>
     <ClInclude Include="Source\Pattern\IteratorExecutor.h">
+      <Filter>소스 파일\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Adapter\IPrint.h">
+      <Filter>소스 파일\Pattern\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Adapter\Banner.h">
+      <Filter>소스 파일\Pattern\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Adapter\PrintBanner.h">
+      <Filter>소스 파일\Pattern\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\AdapterExecutor.h">
       <Filter>소스 파일\Pattern</Filter>
     </ClInclude>
   </ItemGroup>
