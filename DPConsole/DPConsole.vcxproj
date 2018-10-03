@@ -19,22 +19,35 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Product.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\Pattern\AdapterExecutor.cpp" />
     <ClCompile Include="Source\Pattern\Adapter\Banner.cpp" />
     <ClCompile Include="Source\Pattern\Adapter\PrintBanner.cpp" />
+    <ClCompile Include="Source\Pattern\FactoryExecutor.cpp" />
+    <ClCompile Include="Source\Pattern\Factory\Factory.cpp" />
     <ClCompile Include="Source\Pattern\IteratorExecutor.cpp" />
     <ClCompile Include="Source\Pattern\Iterator\Book.cpp" />
     <ClCompile Include="Source\Pattern\Iterator\BookShelf.cpp" />
     <ClCompile Include="Source\Pattern\Iterator\BookShelfIterator.cpp" />
     <ClCompile Include="Source\Pattern\Mediator\ColleagueButton.cpp" />
+    <ClCompile Include="Source\Pattern\TemplateExecutor.cpp" />
+    <ClCompile Include="Source\Pattern\Template\AbstractDisplay.cpp" />
+    <ClCompile Include="Source\Pattern\Template\CharDisplay.cpp" />
+    <ClCompile Include="Source\Pattern\Template\StringDisplay.cpp" />
+    <ClCompile Include="Source\Syntax\RawPointerExecutor.cpp" />
+    <ClCompile Include="Source\Syntax\SmartPointerExecutor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Pattern\AdapterExecutor.h" />
     <ClInclude Include="Source\Pattern\Adapter\Banner.h" />
     <ClInclude Include="Source\Pattern\Adapter\IPrint.h" />
     <ClInclude Include="Source\Pattern\Adapter\PrintBanner.h" />
+    <ClInclude Include="Source\Pattern\FactoryExecutor.h" />
+    <ClInclude Include="Source\Pattern\Factory\Factory.h" />
+    <ClInclude Include="Source\Pattern\Factory\Product.h" />
     <ClInclude Include="Source\Pattern\IPatternExecutor.h" />
+    <ClInclude Include="Source\Pattern\TemplateExecutor.h" />
     <ClInclude Include="Source\Pattern\IteratorExecutor.h" />
     <ClInclude Include="Source\Pattern\Iterator\Book.h" />
     <ClInclude Include="Source\Pattern\Iterator\BookShelf.h" />
@@ -44,6 +57,11 @@
     <ClInclude Include="Source\Pattern\Mediator\ColleagueTextField.h" />
     <ClInclude Include="Source\Pattern\Mediator\IColleague.h" />
     <ClInclude Include="Source\Pattern\Mediator\IMediator.h" />
+    <ClInclude Include="Source\Pattern\Template\AbstractDisplay.h" />
+    <ClInclude Include="Source\Pattern\Template\CharDisplay.h" />
+    <ClInclude Include="Source\Pattern\Template\StringDisplay.h" />
+    <ClInclude Include="Source\Syntax\RawPointerExecutor.h" />
+    <ClInclude Include="Source\Syntax\SmartPointerExecutor.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

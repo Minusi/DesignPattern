@@ -7,6 +7,8 @@
 #include "Adapter\IPrint.h"
 #include "Adapter\PrintBanner.h"
 
+
+
 void NAdapterExecutor::ExecutePattern()
 {
 	std::unique_ptr<IPrint> Print(new NPrintBanner("Hello"));

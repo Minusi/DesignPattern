@@ -10,17 +10,31 @@
 #include "Pattern\IPatternExecutor.h"
 #include "Pattern\IteratorExecutor.h"
 #include "Pattern\AdapterExecutor.h"
+#include "Pattern\TemplateExecutor.h"
 
+#include "Syntax\SmartPointerExecutor.h"
+#include "Syntax\RawPointerExecutor.h"
 
 using namespace nana;
 
 #include <iostream>
 #include <memory>
 
+
+
+
 int main()
 {
-	std::unique_ptr<IPatternExecutor> PatternExecutor(new NAdapterExecutor());
-	PatternExecutor->ExecutePattern();
+	std::unique_ptr<IPatternExecutor> SyntaxExecutor(new NRawPointerExecutor());
+	SyntaxExecutor->ExecutePattern();
 
-	return 0;
+	//std::cout << std::endl << std::endl << std::endl;
+	
+	//std::unique_ptr<IPatternExecutor> PatternExecutor{ new NTempalteExecutor() };
+	//PatternExecutor->ExecutePattern();
+
+	
+
+
+
 } 

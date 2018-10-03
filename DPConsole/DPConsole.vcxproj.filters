@@ -20,11 +20,23 @@
     <Filter Include="소스 파일\Pattern\Adapter">
       <UniqueIdentifier>{636ca7d0-9be8-4de4-87c8-89080cc2f27c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Pattern\Template">
+      <UniqueIdentifier>{3527b836-b938-41c1-9a6c-fbedb2cc8177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Syntax">
+      <UniqueIdentifier>{a2f12c6d-2d6d-435e-b11a-7c0dad2d443c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Pattern\Factory">
+      <UniqueIdentifier>{fb39e38e-30e2-4ac9-a469-60304f90a8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Main">
+      <UniqueIdentifier>{1e279a4e-5076-4ecc-ace7-e1bbc99be67c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Pattern\_Main_">
+      <UniqueIdentifier>{7eea2672-cc00-476e-ba15-676c0ddcb9bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Pattern\Mediator\ColleagueButton.cpp">
       <Filter>소스 파일\Pattern\Mediator</Filter>
     </ClCompile>
@@ -37,17 +49,47 @@
     <ClCompile Include="Source\Pattern\Iterator\BookShelf.cpp">
       <Filter>소스 파일\Pattern\Iterator</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Pattern\IteratorExecutor.cpp">
-      <Filter>소스 파일\Pattern</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Pattern\Adapter\Banner.cpp">
       <Filter>소스 파일\Pattern\Adapter</Filter>
     </ClCompile>
     <ClCompile Include="Source\Pattern\Adapter\PrintBanner.cpp">
       <Filter>소스 파일\Pattern\Adapter</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Syntax\SmartPointerExecutor.cpp">
+      <Filter>소스 파일\Syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Template\AbstractDisplay.cpp">
+      <Filter>소스 파일\Pattern\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Template\CharDisplay.cpp">
+      <Filter>소스 파일\Pattern\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Template\StringDisplay.cpp">
+      <Filter>소스 파일\Pattern\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>소스 파일\Main</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Pattern\AdapterExecutor.cpp">
-      <Filter>소스 파일\Pattern</Filter>
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\TemplateExecutor.cpp">
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\IteratorExecutor.cpp">
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\FactoryExecutor.cpp">
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pattern\Factory\Factory.cpp">
+      <Filter>소스 파일\Pattern\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Product.cpp">
+      <Filter>소스 파일\Pattern\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Syntax\RawPointerExecutor.cpp">
+      <Filter>소스 파일\Syntax</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -75,12 +117,6 @@
     <ClInclude Include="Source\Pattern\Iterator\Book.h">
       <Filter>소스 파일\Pattern\Iterator</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Pattern\IPatternExecutor.h">
-      <Filter>소스 파일\Pattern</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Pattern\IteratorExecutor.h">
-      <Filter>소스 파일\Pattern</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Pattern\Adapter\IPrint.h">
       <Filter>소스 파일\Pattern\Adapter</Filter>
     </ClInclude>
@@ -90,8 +126,41 @@
     <ClInclude Include="Source\Pattern\Adapter\PrintBanner.h">
       <Filter>소스 파일\Pattern\Adapter</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Pattern\Template\AbstractDisplay.h">
+      <Filter>소스 파일\Pattern\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Template\CharDisplay.h">
+      <Filter>소스 파일\Pattern\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Syntax\SmartPointerExecutor.h">
+      <Filter>소스 파일\Syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Template\StringDisplay.h">
+      <Filter>소스 파일\Pattern\Template</Filter>
+    </ClInclude>
     <ClInclude Include="Source\Pattern\AdapterExecutor.h">
-      <Filter>소스 파일\Pattern</Filter>
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\IPatternExecutor.h">
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\TemplateExecutor.h">
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\IteratorExecutor.h">
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\FactoryExecutor.h">
+      <Filter>소스 파일\Pattern\_Main_</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Factory\Factory.h">
+      <Filter>소스 파일\Pattern\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pattern\Factory\Product.h">
+      <Filter>소스 파일\Pattern\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Syntax\RawPointerExecutor.h">
+      <Filter>소스 파일\Syntax</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
