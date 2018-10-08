@@ -14,6 +14,7 @@
 
 #include "Syntax\SmartPointerExecutor.h"
 #include "Syntax\RawPointerExecutor.h"
+#include "Syntax\RValueRefExecutor.h"
 
 using namespace nana;
 
@@ -25,7 +26,7 @@ using namespace nana;
 
 int main()
 {
-	std::unique_ptr<IPatternExecutor> SyntaxExecutor(new NRawPointerExecutor());
+	std::unique_ptr<IPatternExecutor> SyntaxExecutor(new RValueRefExecutor());
 	SyntaxExecutor->ExecutePattern();
 
 	//std::cout << std::endl << std::endl << std::endl;

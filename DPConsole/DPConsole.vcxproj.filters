@@ -91,6 +91,9 @@
     <ClCompile Include="Source\Syntax\RawPointerExecutor.cpp">
       <Filter>소스 파일\Syntax</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Syntax\RValueRefExecutor.cpp">
+      <Filter>소스 파일\Syntax</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Pattern\Mediator\ColleagueButton.h">
@@ -160,6 +163,9 @@
       <Filter>소스 파일\Pattern\Factory</Filter>
     </ClInclude>
     <ClInclude Include="Source\Syntax\RawPointerExecutor.h">
+      <Filter>소스 파일\Syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Syntax\RValueRefExecutor.h">
       <Filter>소스 파일\Syntax</Filter>
     </ClInclude>
   </ItemGroup>

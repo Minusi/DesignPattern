@@ -23,6 +23,34 @@ void SmartPointerEX2()
 	std::unique_ptr<int> Up2 = std::move(Up1);
 }
 
+void SmartPointerEX3()
+{
+	class Dummy
+	{
+	private:
+		int n;
+		std::string s;
+
+	public:
+		Dummy(int InN, std::string InS) : n(InN), s(InS)
+		{
+			std::cout << "Create::(" << s << ")\t" << std::endl << std::endl;
+			std::cout << this << std::endl;
+		}
+		~Dummy()
+		{
+			std::cout << "Delete::(" << s << ")\t" << std::endl << std::endl;
+			std::cout << this << std::endl;
+		}
+		Dummy(const Dummy& InDummy)
+		{
+			std::cout << "Copier::(" << s << ")\t" << std::endl << std::endl;
+			std::cout << this << std::endl;
+		}
+
+
+	};
+}
 
 void WeakPointerEX1()
 {

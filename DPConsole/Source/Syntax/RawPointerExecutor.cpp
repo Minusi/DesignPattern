@@ -48,7 +48,7 @@ void RawPointerEX1()
 	int& ref = nested.function();
 	std::cout << std::endl;
 	// 왜인지는 모르겠지만 45라인에서 값을 넘겨받고나면
-	// 46라인이 실행된 후에야 메모리 값에 null이 발생한다.
+	// 48라인이 실행된 후에야 메모리 값에 null이 발생한다.
 	// 아래 모든 ref2, pref, pref2에도 해당되는 얘기이다.
 	std::cout << ref << std::endl;
 
@@ -204,7 +204,6 @@ void RawPointerToSmartEX2()
 	Dummy y(3, 3, "y");
 	Dummy z(4, 4, "z");
 
-
 	Dummy w = x+y;// +z;
 	std::cout << std::endl;
 	pdum = &w;
@@ -249,7 +248,6 @@ void RawPointerEX3()
 /*
  *	Raw Pointer Main 함수 진입 지점
  */
-
 void NRawPointerExecutor::ExecutePattern()
 {
 	//RawPointerEX1();
@@ -259,4 +257,4 @@ void NRawPointerExecutor::ExecutePattern()
 
 	//RawPointerEX3();
 
- }
+}

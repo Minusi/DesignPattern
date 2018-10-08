@@ -36,6 +36,7 @@
     <ClCompile Include="Source\Pattern\Template\CharDisplay.cpp" />
     <ClCompile Include="Source\Pattern\Template\StringDisplay.cpp" />
     <ClCompile Include="Source\Syntax\RawPointerExecutor.cpp" />
+    <ClCompile Include="Source\Syntax\RValueRefExecutor.cpp" />
     <ClCompile Include="Source\Syntax\SmartPointerExecutor.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +62,7 @@
     <ClInclude Include="Source\Pattern\Template\CharDisplay.h" />
     <ClInclude Include="Source\Pattern\Template\StringDisplay.h" />
     <ClInclude Include="Source\Syntax\RawPointerExecutor.h" />
+    <ClInclude Include="Source\Syntax\RValueRefExecutor.h" />
     <ClInclude Include="Source\Syntax\SmartPointerExecutor.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
